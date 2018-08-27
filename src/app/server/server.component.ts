@@ -5,6 +5,6 @@ import { Component } from '@angular/core' // decorator that marks a class as an 
     templateUrl: './server.component.html'
 })
 
-export class AppComponent {
+export default class ServerComponent {
     
 }

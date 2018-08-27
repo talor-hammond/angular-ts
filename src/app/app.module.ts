@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+// app.module.ts: bundles the functionalities of our app
 
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+
+// Components
+import { AppComponent } from './app.component'
+import ServerComponent from './server/server.component'
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ 
+    AppComponent,
+    ServerComponent
   ],
-  imports: [
+  imports: [ // allows us to import and reference other modules inside this 'root' NgModule
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // bootstrap the 'AppComponent' when the application starts
 })
 export class AppModule { }
