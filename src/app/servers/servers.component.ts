@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
+  customClass = "button"
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.customClass = "button is-primary"
+    }, 2000)
+  }
 
   ngOnInit() {
   }
