@@ -7,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoComponent implements OnInit {
   name = 'Tay'
+  todoList = ['Add more todos']
+  newItem = ''
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+  }
+
+  updateItem(e: any) {
+    console.log(e.target.value)
   }
 
 }
