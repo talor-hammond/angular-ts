@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   customClass = "button"
+  serverAddedDetails = 'Server has not been created'
 
   constructor() {
     setTimeout(() => {
       this.customClass = "button is-primary"
     }, 2000)
+  }
+
+  serverAdded() {
+    this.serverAddedDetails = 'Server has been added :-)'
   }
 
   ngOnInit() {
