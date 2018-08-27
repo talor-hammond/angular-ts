@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms'
 // Components
 import { AppComponent } from './app.component'
 import ServerComponent from './server/server.component'
-import { ServersComponent } from './servers/servers.component'
+import { ServersComponent } from './servers/servers.component';
+import { TodoComponent } from './todo/todo.component'
 
 @NgModule({
   declarations: [ 
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    TodoComponent
   ],
   imports: [ // allows us to import and reference other modules inside this 'root' NgModule
     BrowserModule,
