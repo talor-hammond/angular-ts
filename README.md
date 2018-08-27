@@ -10,3 +10,15 @@ Plan to follow through for the learning of best-practices & convention w Angular
     * while the directory is slightly more messy than a simple react-app, everything feels nicely segregated into specific parts: stylesheets split-up, testing
 * dealing with natural-HTML is really refreshing
     * coming from using JSX which can get messy sometimes; especially with syntactical issues from ES6 & Babel <6 not co-operating sometimes
+
+
+# Concepts
+**Databinding**
+    * Interaction between TypeScript code (logic) and templates / HTML
+    * Our TypeScript code will output data
+        * String interpolation: `{{ data }}`
+        * Property binding: `[property]="data"`
+    * Our templates will react to User events
+        * Event binding: `(event)="expression"`
+    * *Combination of both*
+        * Two-way binding: `[(ngModel)]="data"`
