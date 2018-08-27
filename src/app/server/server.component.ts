@@ -6,5 +6,10 @@ import { Component } from '@angular/core' // decorator that marks a class as an 
 })
 
 export default class ServerComponent {
-    
+    name = 'Tay'
+    age = 21
+
+    getAge() {
+        return this.age
+    }
 }
