@@ -3,15 +3,31 @@
     <div class="hero-head has-text-centered">
       <h1 class="title">{{ name }}'s to-dos</h1>
     </div>
+
     <div class="hero-body">
       <div class="field has-addons">
         <div class="control">
           <input type="text" class="input" placeholder="Add an item here" [(ngModel)]="newItem">
         </div>
         <div class="control">
-          <button class="button is-info">Add</button>
+          <button class="button is-info" (click)="onItemAdded()">Add</button>
         </div>
       </div>
     </div>
+
+    <h1 class="title is-3">Next-up</h1>
+    <ul>
+      <li *ngFor="let todo of todos; let i=index">
+        <b>{{ todo.title }}</b>, <span (click)="onTodoDone(i)">done</span>
+      </li>
+    </ul>
+
+    <h1 class="title is-3">Done</h1>
+    <ul>
+      <li *ngFor="let done of doneTodos; let i=index">
+        <b>{{ done.title }}</b>
+      </li>
+    </ul>
+
   </div>
 </div>
